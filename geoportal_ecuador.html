@@ -39,11 +39,11 @@
 <div id="loading">Cargando capas...</div>
 <div class="layer-control">
   <h4>Capas</h4>
-  <label><input type="checkbox" id="observatorios" checked> Observatorios</label>
-  <label><input type="checkbox" id="cantones" checked> Cantones</label>
-  <label><input type="checkbox" id="vias" checked> Vías</label>
-  <label><input type="checkbox" id="poblaciones" checked> Poblaciones</label>
-  <label><input type="checkbox" id="aeropuertos" checked> Aeropuertos</label>
+  <label><input type="checkbox" id="Red_Observatorios_Vulcanologicos" checked> Observatorios</label>
+  <label><input type="checkbox" id="cantoness" checked> Cantones</label>
+  <label><input type="checkbox" id="viass" checked> Vías</label>
+  <label><input type="checkbox" id="poblacioness2" checked> Poblaciones</label>
+  <label><input type="checkbox" id="aeropuertoss" checked> Aeropuertos</label>
 </div>
 <div id="map"></div>
 
@@ -53,7 +53,7 @@
   // Configuración de la conexión a PostgreSQL
   const DB_CONFIG = {
     host: 'aws-0-us-east-2.pooler.supabase.com',
-    port: 6543,
+    port: '6543',
     database: 'postgres',
     user: 'postgres.pgecdgilxbmtuerqzrbu',
     password: 'Ivette12Cev!'
@@ -87,11 +87,11 @@
 
   // Variables para almacenar las capas
   let layerGroups = {
-    observatorios: L.layerGroup(),
-    cantones: L.layerGroup(),
-    vias: L.layerGroup(),
-    poblaciones: L.layerGroup(),
-    aeropuertos: L.layerGroup()
+    Red_Observatorios_Vulcanologicos: L.layerGroup(),
+    cantoness: L.layerGroup(),
+    viass: L.layerGroup(),
+    poblacioness2: L.layerGroup(),
+    aeropuertoss: L.layerGroup()
   };
 
   // Función para ejecutar consultas SQL y obtener GeoJSON
